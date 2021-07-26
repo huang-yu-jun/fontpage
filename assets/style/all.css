@@ -1,23 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  min-width: 100%;
+  height: auto; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
 .header {
-  height: 200px;
-  background-color: #00cc99; }
-
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  background: #AA0601;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 88px;
+  padding-left: 88px; }
+  @media (max-width: 768px) {
+    .header {
+      padding-right: 39px;
+      padding-left: 39px; } }
+  @media (max-width: 375px) {
+    .header {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-right: 0;
+      padding-left: 0;
+      max-width: 440px; } }
+  .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 375px) {
+      .header ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%; } }
+    @media (max-width: 375px) {
+      .header ul li {
+        width: 50%; } }
+    .header ul li a {
+      font-size: 20px;
+      line-height: 30px;
+      display: block;
+      color: #fff;
+      padding: 38px 32px 41px 32px;
+      text-decoration: none; }
+      .header ul li a:hover {
+        background: #650300; }
+      @media (max-width: 768px) {
+        .header ul li a {
+          padding: 44px 10px 43px 10px; } }
+      @media (max-width: 375px) {
+        .header ul li a {
+          display: block;
+          text-align: center;
+          padding: 8px 0px;
+          border: 1px solid white; } }
+  .header .logo {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .header .logo a {
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      display: block;
+      text-indent: -101%;
+      overflow: hidden;
+      word-spacing: nowrap;
+      width: 80px;
+      height: 48px; }
+    @media (max-width: 375px) {
+      .header .logo {
+        width: 48px;
+        height: 30px;
+        margin: 20px auto 40px auto; } }
 
 /*# sourceMappingURL=all.css.map */
