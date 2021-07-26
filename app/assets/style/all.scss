@@ -1,23 +1,96 @@
-$color: #00cc99;
+@import "_reset";
+@import "_grid";
+@import "_variable";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,900&display=swap');
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 .header {
-  height: 200px;
-  background-color: #00cc99;
+    background: $primary;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 88px;
+    padding-left: 88px;
+
+    @include pad(){
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+
+    @include mobile(){
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 440px;
+    }
+
+    ul{
+        display: flex;
+        @include mobile{
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+        }
+
+        li{
+            @include mobile{
+                width: 50%;
+            }
+        }
+
+        li a{
+            font-size: 20px;
+            line-height: 30px;
+            display: block;
+            color:#fff;
+            padding:38px 32px 41px 32px;
+            text-decoration: none;
+            &:hover{
+                background: $secondary;
+            }
+
+            @include pad(){
+                padding: 44px 10px 43px 10px;
+            }
+
+            @include mobile{
+                display: block;
+                text-align: center;
+                padding: 8px 0px;
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .logo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        a {
+            background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+            display: block;
+            text-indent: -101%;
+            overflow: hidden;
+            word-spacing: nowrap;
+            width: 80px;
+            height: 48px;
+        }
+
+        @include mobile{
+            width: 48px;
+            height: 30px;
+            margin: 20px auto 40px auto;
+        }
+    }
+
 }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+
