@@ -113,7 +113,7 @@ img {
     margin-top: 30px;
     margin-bottom: 30px; }
     .header .logo a {
-      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      background-image: url(../images/logo.png);
       display: block;
       text-indent: -101%;
       overflow: hidden;
@@ -292,6 +292,10 @@ img {
   margin: 0 auto;
   padding: 0 15px; }
 
+.d-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +320,15 @@ img {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
+.jcad {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.jcsey {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
 .bg-primary {
   background: #AA0601; }
 
@@ -334,9 +347,10 @@ img {
     margin-bottom: 60px;
     font-size: 48px;
     line-height: 80px;
-    font-weight: bold;
+    font-weight: 900;
     padding-left: 16px;
-    border-left: 8px solid #AA0601; }
+    border-left: 8px solid #AA0601;
+    font-family: 'Noto Sans'; }
     @media (max-width: 768px) {
       .faq h2 {
         margin-bottom: 40px; } }
@@ -373,5 +387,217 @@ img {
     @media (max-width: 376px) {
       .faq p {
         margin-left: 0px; } }
+
+.location h2 {
+  margin-top: 96px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601;
+  font-family: 'Noto Sans'; }
+  @media (max-width: 768px) {
+    .location h2 {
+      margin-top: 60px;
+      margin-bottom: 48px;
+      line-height: 67px;
+      border-left: 4px solid #AA0601; } }
+  @media (max-width: 376px) {
+    .location h2 {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      margin-top: 36px; } }
+
+.location .choice {
+  margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    .location .choice {
+      margin-bottom: 24px; } }
+  .location .choice p {
+    margin-right: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: "Noto Sans TC", sans-serif; }
+  .location .choice .choice-area {
+    font-size: 24px;
+    line-height: 30px;
+    width: 324px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 26px; }
+    @media (max-width: 768px) {
+      .location .choice .choice-area {
+        font-size: 16px;
+        line-height: 30px;
+        width: 237px;
+        height: 46px; } }
+
+.location .area-card .area-item {
+  width: 31%;
+  margin-bottom: 32px;
+  margin-right: 15px; }
+  @media (max-width: 768px) {
+    .location .area-card .area-item {
+      width: 48%;
+      margin-right: 5px;
+      margin-bottom: 20px; } }
+  @media (max-width: 376px) {
+    .location .area-card .area-item {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 16px; } }
+
+.location .area-card .shop-pic {
+  height: 224px;
+  width: 100%; }
+
+.location .area-card h3 {
+  padding: 12px 0px 12px 24px;
+  font-size: 24px;
+  line-height: 36px;
+  border: 1px solid #00000020;
+  padding-bottom: 16px;
+  font-weight: "Noto Sans TC", sans-serif; }
+  @media (max-width: 768px) {
+    .location .area-card h3 {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.location .area-card ul {
+  width: 100%;
+  border: 1px solid #00000021;
+  padding-left: 27px;
+  padding-top: 16px; }
+  .location .area-card ul li {
+    margin-bottom: 8px; }
+    .location .area-card ul li .icon-phone {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      margin-bottom: 8px; }
+    .location .area-card ul li .icon-clock {
+      width: 16px;
+      height: 20px;
+      margin-right: 9px;
+      margin-bottom: 8px; }
+    .location .area-card ul li .icon-map {
+      width: 16px;
+      height: 20px;
+      margin-right: 10px;
+      margin-bottom: 16px; }
+    .location .area-card ul li p {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: "Noto Sans TC", sans-serif; }
+      @media (max-width: 768px) {
+        .location .area-card ul li p {
+          font-size: 14px;
+          line-height: 21px; } }
+
+.location .area-card a {
+  display: block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0; }
+
+.location-detail h2 {
+  margin-top: 96px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601;
+  font-family: 'Noto Sans'; }
+  @media (max-width: 768px) {
+    .location-detail h2 {
+      margin-top: 60px;
+      margin-bottom: 48px;
+      line-height: 67px;
+      border-left: 4px solid #AA0601; } }
+  @media (max-width: 376px) {
+    .location-detail h2 {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      margin-top: 36px; } }
+
+.location-detail .choice {
+  margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    .location-detail .choice {
+      margin-bottom: 24px; } }
+  .location-detail .choice p {
+    margin-right: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: "Noto Sans TC", sans-serif; }
+  .location-detail .choice .choice-area {
+    font-size: 24px;
+    line-height: 30px;
+    width: 324px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 26px; }
+    @media (max-width: 768px) {
+      .location-detail .choice .choice-area {
+        font-size: 16px;
+        line-height: 30px;
+        width: 237px;
+        height: 46px; } }
+
+.location-detail .card {
+  width: 445px; }
+  .location-detail .card .shop-pic {
+    width: 100%; }
+  .location-detail .card h3 {
+    padding: 12px 0px 12px 24px;
+    font-size: 24px;
+    line-height: 36px;
+    border: 1px solid #00000020;
+    padding-bottom: 16px;
+    font-weight: "Noto Sans TC", sans-serif; }
+    @media (max-width: 768px) {
+      .location-detail .card h3 {
+        font-size: 16px;
+        line-height: 24px; } }
+  .location-detail .card ul {
+    width: 100%;
+    border: 1px solid #00000021;
+    padding-left: 27px;
+    padding-top: 16px; }
+    .location-detail .card ul li {
+      margin-bottom: 8px; }
+      .location-detail .card ul li .icon-phone {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        margin-bottom: 8px; }
+      .location-detail .card ul li .icon-clock {
+        width: 16px;
+        height: 20px;
+        margin-right: 9px;
+        margin-bottom: 8px; }
+      .location-detail .card ul li .icon-map {
+        width: 16px;
+        height: 20px;
+        margin-right: 10px;
+        margin-bottom: 16px; }
+      .location-detail .card ul li p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: "Noto Sans TC", sans-serif; }
+        @media (max-width: 768px) {
+          .location-detail .card ul li p {
+            font-size: 14px;
+            line-height: 21px; } }
+  .location-detail .card iframe {
+    width: 635px;
+    height: 422px; }
 
 /*# sourceMappingURL=all.css.map */
