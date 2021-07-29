@@ -1,6 +1,6 @@
 
-@mixin pad-lager{
-    @media (max-width:857px){
+@mixin pad-larger{
+    @media (max-width:920px){
         @content
     }
 }
@@ -11,18 +11,15 @@
     }
 }
 
-
-
-
-@mixin mobile-plus{
-    @media(max-width:414px){
+@mixin pad-sm{
+    @media (max-width:600px){
         @content
     }
 }
 
 
 @mixin mobile{
-    @media (max-width:375px){
+    @media (max-width:376px){
         @content
     }
 }

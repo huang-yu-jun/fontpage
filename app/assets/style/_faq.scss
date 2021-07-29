@@ -1,0 +1,59 @@
+.faq{
+    margin-bottom: 160px;
+    @include pad(){
+        margin-bottom: 96px;
+    }
+
+    h2{
+        margin-top: 96px;
+        margin-bottom: 60px;
+        font-size: 48px;
+        line-height: 80px;
+        font-weight: bold;
+        padding-left: 16px;
+        border-left : 8px solid $primary;
+        @include pad(){
+            margin-bottom: 40px;
+        }
+        @include mobile(){
+            font-size: 48x;
+            margin-bottom: 40px;
+        }
+    }
+
+    h3{
+        font-size: 32px;
+        line-height: 63px;
+        font-weight: bold;
+        margin-bottom: 36px;
+        @include pad(){
+            margin-bottom: 32px;
+        }
+    }
+
+    h4{
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        @include mobile(){
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 16px;
+        }
+    }
+
+    p{
+        margin-left: 95px;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+
+        @include pad(){
+            margin-left: 44px;
+        }
+        @include mobile(){
+            margin-left: 0px;
+        }
+    }
+}

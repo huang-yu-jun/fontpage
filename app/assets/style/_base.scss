@@ -1,0 +1,35 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.fxdc{
+    flex-direction: column;
+}
+
+.db{
+    display: block;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcfs{
+    justify-content: flex-start;
+}
+
+.bg-primary{
+    background: $primary;
+}
+
+.aib{
+    align-items: baseline;
+}
+
