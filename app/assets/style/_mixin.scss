@@ -1,0 +1,10 @@
+@mixin bigTitle{
+    margin-top: 96px;
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 80px;
+    font-weight:900;
+    padding-left: 16px;
+    border-left : 8px solid $primary;
+    font-family:'Noto Sans';
+}

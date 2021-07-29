@@ -5,13 +5,7 @@
     }
 
     h2{
-        margin-top: 96px;
-        margin-bottom: 60px;
-        font-size: 48px;
-        line-height: 80px;
-        font-weight: bold;
-        padding-left: 16px;
-        border-left : 8px solid $primary;
+        @include bigTitle;
         @include pad(){
             margin-bottom: 40px;
         }

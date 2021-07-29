@@ -4,6 +4,9 @@
     padding: 0 15px;
 }
 
+.d-wrap{
+    flex-wrap: wrap;
+}
 
 .d-flex{
     display: flex;
@@ -23,6 +26,14 @@
 
 .jcfs{
     justify-content: flex-start;
+}
+
+.jcad{
+    justify-content: space-around;
+}
+
+.jcsey{
+    justify-content: space-evenly;
 }
 
 .bg-primary{
