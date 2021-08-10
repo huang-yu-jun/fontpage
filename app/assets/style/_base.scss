@@ -4,6 +4,9 @@
     padding: 0 15px;
 }
 
+.font-eg{
+    font-family: $en-fontFamily;
+}   
 .d-wrap{
     flex-wrap: wrap;
 }
@@ -40,7 +43,18 @@
     background: $primary;
 }
 
+.aic{
+    align-items: center;
+}
+
 .aib{
     align-items: baseline;
 }
 
+.mr48{
+    margin-right: 48px;
+}
+
+.mb8{
+    margin-bottom: 8px;
+}

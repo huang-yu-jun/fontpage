@@ -2,7 +2,7 @@
     background: $primary;
     display: flex;
     justify-content: space-between;
-    padding-right: 88px;
+    padding-right: 56px;
     padding-left: 88px;
 
     @include pad-larger(){
@@ -62,6 +62,7 @@
 
         a {
             background-image: url(../images/logo.png);
+            background-size: cover;
             display: block;
             text-indent: -101%;
             overflow: hidden;
@@ -92,7 +93,6 @@
     
 
         .menu{
-            width: 464px;
             justify-content: space-between;
             margin-top: 44px;
             margin-bottom: 42px;
@@ -114,6 +114,9 @@
             
             @include pad(){
                 width: 432px;
+                .mr48{
+                    margin-right: 40px;
+                }
             }
 
             @include pad-sm(){
