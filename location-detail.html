@@ -30,30 +30,33 @@
             <p>選擇地區</p>
             <select class="choice-area">
                 <option value="1">台北市</option>
+                <option value="2">新北市</option>
             </select>
         </div>
-        <section class="d-flex jcsb aic">
+        <section class="d-flex jcsb aifs row">
         <div class="card">
             <img class="shop-pic" src="./assets/images/locate.png" alt="shop-pic">             
             <div class="shop">
                 <h3>台北中山旗艦店</h3>
-                <li class="d-flex aib">
-                    <img class="icon-phone" src="./assets/images/icon-phone-black.svg" alt="phone">
-                    <p>電話：(02)000-1234</p>
-                </li>
-                <li class="d-flex aib">
-                    <img class="icon-clock" src="/assets/images/icon-clock-black.svg" alt="clock">
-                    <p>營業時間：10:00-21:00</p>
-                </li>
-                <li class="d-flex aib">
-                    <img class="icon-map" src="/assets/images/icon-map.svg" alt="">
-                    <p>地址：台北市中山區南京東路25巷2-1號</p>
-                </li>
+                <ul>
+                    <li class="d-flex aib">
+                        <img class="icon-phone" src="./assets/images/icon-phone-black.svg" alt="phone">
+                        <p>電話：(02)000-1234</p>
+                    </li>
+                    <li class="d-flex aib">
+                        <img class="icon-clock" src="/assets/images/icon-clock-black.svg" alt="clock">
+                        <p>營業時間：10:00-21:00</p>
+                    </li>
+                    <li class="d-flex aib">
+                        <img class="icon-map" src="/assets/images/icon-map.svg" alt="">
+                        <p>地址：台北市中山區南京東路25巷2-1號</p>
+                    </li>
+                </ul>
             </div>
         </div> 
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.437851908948!2d121.51804291405304!3d25.05314464367982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a969512c9741%3A0x4adcb4498539709f!2sMooi%20hair%20salon%202%E9%A4%A8!5e0!3m2!1szh-TW!2stw!4v1627548894348!5m2!1szh-TW!2stw"  
-        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.751955362344!2d121.520232!3d25.05314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4adcb4498539709f!2sMooi%20hair%20salon%202%E9%A4%A8!5e0!3m2!1szh-TW!2stw!4v1628566500888!5m2!1szh-TW!2stw" height="100%" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" loading="lazy"></iframe>
+        </div>
     </section>
 </div>
 
@@ -63,19 +66,19 @@
         <div class="main d-flex jcsb">
             <div class="main-left">
                 <ul class="menu d-flex">
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">系列鏡框</a></li>
-                    <li><a href="location.html">門市據點</a></li>
-                    <li><a href="#">部落格</a></li>
+                    <li><a href="#" class="mr48">首頁</a></li>
+                    <li><a href="#" class="mr48">系列鏡框</a></li>
+                    <li><a href="location.html" class="mr48">門市據點</a></li>
+                    <li><a href="#" class="mr48">部落格</a></li>
                     <li><a href="faq.html">常見問題</a></li>
                 </ul>
-                <div class="phone d-flex aib">
+                <div class="phone d-flex aic">
                     <img src="./assets/images/icon-phone.svg" alt="phone">
-                    <h3>0800-000-000</h3>
+                    <h3 class="font-eg">0800-000-000</h3>
                 </div>
-                <div class="mail d-flex aib">
+                <div class="mail d-flex aic">
                     <img src="./assets/images/icon-mail.svg" alt="mail">
-                    <h3>
+                    <h3 class="font-eg">
                         <a href="mailto:glasses@business.com">glasses@business.com</a>
                     </h3>
                 </div>
@@ -90,7 +93,7 @@
         </div>
         <div class="copyright d-flex jcsb">
             <div class="copyright-txt">
-                <p>Copyright © 2021 Glasses.All rights reserved.</p>
+                <p class="font-eg">Copyright © 2021 Glasses.All rights reserved.</p>
             </div>
             <ul class="d-flex copyright-link jcsb">
                 <li><a href="#">隱私權政策</a></li>
