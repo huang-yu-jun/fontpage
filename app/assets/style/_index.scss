@@ -120,3 +120,97 @@
         }
     }
 }
+
+
+.customer{
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    h2{
+        @include font(48px,72px,$ch-fontFamily,bold);
+        text-align: center;
+    }
+
+    ul{
+        width: 100%;
+
+        li{
+            width: 25%;
+            height: 460px;
+            border:1px solid #DEE2E6;
+        
+            img{
+                margin-bottom: 16px;
+                height: 256px;
+            }
+
+            h4{
+                @include font(14px,21px,$ch-fontFamily,normal);
+            }
+
+            p{
+                @include font(14px,21px,$ch-fontFamily,normal);
+                color:$lighter-gray;
+            }
+        }
+    }
+}
+
+.contact{
+    background: $light-orange;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    h2{
+        @include font(48px,72px,$ch-fontFamily,bold);
+        text-align: center;
+    }
+    .content{
+        width: 730px;
+        margin: 0 auto;
+        h3{
+            @include font(20px,30px,$ch-fontFamily,normal);
+        }
+
+        p{
+            @include font(16px,24px,$ch-fontFamily,normal);
+        }
+
+        input[type="text"],input[type="tel"],input[type="email"]{
+            width: 100%;
+            border:1px solid black;
+            background: $light-orange;
+            height: 50px;
+            &::placeholder{
+                padding: 14px 0px 14px 16px;
+                @include font(16px,24px,$ch-fontFamily,normal);
+            }
+        }
+
+        input[type="checkbox"]{
+            background: $light-orange;
+            width: 24px;
+            height: 24px;
+        }
+
+        span{
+            @include font(16px,24px,$ch-fontFamily,normal);
+        }
+
+        textarea{
+            width: 100%;
+            height: 136px;
+            background: $light-orange;
+            border:1px solid black;
+        }
+
+        input[type="submit"]{
+            background:$primary;
+            width: 350px;
+            height: 54px;
+            color:white;
+            border:none;
+            margin: 0 auto;
+        }
+    }
+}
