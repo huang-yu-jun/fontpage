@@ -1,0 +1,122 @@
+.banner{
+    background-image: url('../images/banner.png');
+    background-position: center center;
+    height: 90vh;
+
+    h2{
+        @include font(64px,96px,$ch-fontFamily,bold);
+        color:$secondary;
+    }
+
+    h3{
+        @include font(36px,54px,$ch-fontFamily,normal);
+        color:$secondary;
+    }
+
+    .container{
+        height: 100%;
+
+    }
+}
+
+.intro{
+    background: $light-orange;
+    h2{
+        @include font(48px,72px,$ch-fontFamily,bold);
+        color:$secondary;
+        padding: 60px 0 40px 0;
+        text-align: center;
+    }
+
+    .icon-clock,.icon-dollar{
+        width: 84px;
+        height: 84px;
+        margin-bottom: 24px;
+    }
+
+    .icon-heart{
+        width: 84px;
+        height: 76px;
+    }
+
+    .icon-glasses{
+        width: 84px;
+        height: 76px;
+    }
+
+    h3{
+        @include font(24px,36px,$ch-fontFamily,bold);
+        color:$secondary;
+    }
+
+    p{
+        @include font(16px,24px,$ch-fontFamily,normal);
+    }
+}
+
+.classic{
+    padding: 60px 0px;
+
+    h2{
+        @include font(48px,72px,$ch-fontFamily,bold);
+        color:$secondary;
+        text-align: center;
+    }
+
+    ul{
+        width: 100%;
+
+    
+
+        .pic{
+            width: 58%;
+            height: 320px;
+        }
+
+        h3{
+            @include font(48px,72px,$en-fontFamily,bold);
+            color:$primary;
+            font-style: italic;
+        }
+    }
+
+}
+
+.design{
+    height: 705px;
+
+    padding:60px 0 80px 0;
+    
+    background-image: url('../images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    h2{
+        @include font(48px,72px,$ch-fontFamily,bold);
+        color:white; 
+        text-align: center;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    li{
+        width: 50%;
+        height: 455px;
+
+        .pic1{
+            background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png") center;
+        }
+
+        .pic2{
+            background-image: url('../images/product-9.png');
+        }
+
+        h3{
+            @include font(72px,108px,$en-fontFamily,bold);
+            color:$primary;
+        }
+    }
+}

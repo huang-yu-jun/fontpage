@@ -23,12 +23,21 @@
     display: block;
 }
 
+.jcc{
+    justify-content: center;
+}
+
 .jcsb{
     justify-content: space-between;
 }
 
+
 .jcfs{
     justify-content: flex-start;
+}
+
+.jcfe{
+    justify-content: flex-end;
 }
 
 .jcad{
@@ -47,8 +56,23 @@
     align-items: center;
 }
 
+.aife{
+    align-items: flex-end;
+}
+
 .aib{
     align-items: baseline;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+.mr30{
+    margin-right: 30px;
+}
+
+.mr32{
+    margin-right: 32px;
 }
 
 .mr48{
@@ -57,4 +81,28 @@
 
 .mb8{
     margin-bottom: 8px;
+}
+
+.mb24{
+    margin-bottom: 24px;
+}
+
+.mb27{
+    margin-bottom: 27px;
+}
+
+.mb25{
+    margin-bottom: 25px;
+}
+
+.mb32{
+    margin-bottom: 32px;
+}
+
+.mb40{
+    margin-bottom: 40px;
+}
+
+.pb80{
+    padding-bottom: 80px;
 }
