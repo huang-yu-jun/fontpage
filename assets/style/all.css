@@ -315,6 +315,11 @@ img {
 .db {
   display: block; }
 
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .jcsb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -324,6 +329,11 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+
+.jcfe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .jcad {
   -ms-flex-pack: distribute;
@@ -342,16 +352,150 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
+.aife {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .aib {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mr32 {
+  margin-right: 32px; }
 
 .mr48 {
   margin-right: 48px; }
 
 .mb8 {
   margin-bottom: 8px; }
+
+.mb24 {
+  margin-bottom: 24px; }
+
+.mb27 {
+  margin-bottom: 27px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+.mb32 {
+  margin-bottom: 32px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.pb80 {
+  padding-bottom: 80px; }
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-position: center center;
+  height: 90vh; }
+  .banner h2 {
+    font-size: 64px;
+    line-height: 96px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    color: #650300; }
+  .banner h3 {
+    font-size: 36px;
+    line-height: 54px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    color: #650300; }
+  .banner .container {
+    height: 100%; }
+
+.intro {
+  background: #FBF2F2; }
+  .intro h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    color: #650300;
+    padding: 60px 0 40px 0;
+    text-align: center; }
+  .intro .icon-clock, .intro .icon-dollar {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 24px; }
+  .intro .icon-heart {
+    width: 84px;
+    height: 76px; }
+  .intro .icon-glasses {
+    width: 84px;
+    height: 76px; }
+  .intro h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    color: #650300; }
+  .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal; }
+
+.classic {
+  padding: 60px 0px; }
+  .classic h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    color: #650300;
+    text-align: center; }
+  .classic ul {
+    width: 100%; }
+    .classic ul .pic {
+      width: 58%;
+      height: 320px; }
+    .classic ul h3 {
+      font-size: 48px;
+      line-height: 72px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #AA0601;
+      font-style: italic; }
+
+.design {
+  height: 705px;
+  padding: 60px 0 80px 0;
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+  .design h2 {
+    font-size: 48px;
+    line-height: 72px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center; }
+  .design ul {
+    width: 100%; }
+  .design li {
+    width: 50%;
+    height: 455px; }
+    .design li .pic1 {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png") center; }
+    .design li .pic2 {
+      background-image: url("../images/product-9.png"); }
+    .design li h3 {
+      font-size: 72px;
+      line-height: 108px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #AA0601; }
 
 .faq {
   margin-bottom: 160px; }
