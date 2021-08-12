@@ -100,11 +100,15 @@
 
     ul{
         width: 100%;
-    }
-
-    li{
-        width: 50%;
-        height: 455px;
+        li{
+            width: 50%;
+            height: 455px;
+    
+            h3{
+                @include font(72px,108px,$en-fontFamily,bold);
+                color:$primary;
+            }
+        }
 
         .pic1{
             background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png") center;
@@ -113,12 +117,9 @@
         .pic2{
             background-image: url('../images/product-9.png');
         }
-
-        h3{
-            @include font(72px,108px,$en-fontFamily,bold);
-            color:$primary;
-        }
     }
+
+
 }
 
 
@@ -205,12 +206,14 @@
         }
 
         input[type="submit"]{
+            display: block;
             background:$primary;
             width: 350px;
             height: 54px;
             color:white;
             border:none;
             margin: 0 auto;
+            @include font(16px,24px,$ch-fontFamily,normal);
         }
     }
 }

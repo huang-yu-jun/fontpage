@@ -1,0 +1,121 @@
+.product_op{
+    .nav{
+        li{
+            border:1px solid $gray;
+        }
+
+        li:nth-child(1){
+
+            border-bottom: 3px solid $primary;
+            a{
+                padding: 23px 90px 23px 10px; 
+                @include font(32px , 48px, $en-fontFamily,normal);
+                color:#000;
+                text-decoration: none;
+            }
+    
+            img{
+                margin-left: 92px;
+                height: 44px;
+                width: 44px;
+            }
+        }
+
+        li:nth-child(2){
+            a{
+                padding: 23px 57px 23px 10px; 
+                @include font(32px , 48px, $en-fontFamily,normal);
+                color:#000;
+                text-decoration: none;
+            }
+    
+            img{
+                margin-left: 57px;
+                height: 44px;
+                width: 44px;
+            }
+        }
+
+        li:nth-child(3){
+            a{
+                padding: 23px 71px 23px 10px; 
+                @include font(32px , 48px, $en-fontFamily,normal);
+                color:#000;
+                text-decoration: none;
+            }
+    
+            img{
+                margin-left: 50px;
+                height: 44px;
+                width: 44px;
+            }
+        }
+    }
+}
+
+.product-banner{
+        
+    ul{
+        li{
+            height: 304px;
+        }
+
+        li:first-child{
+            width: 50%;
+            background-image: url('../images/banner-1.png');
+        }
+
+        li:nth-child(2){
+            width: 50%;
+            background-image: url('../images/banner-2.png');
+        }
+    }
+
+}
+
+.product-intro{
+    h2{
+        @include font(42px,63px,$en-fontFamily,normal);
+        text-align: center;
+    }
+
+    h3{
+        @include font(32px,48px,$ch-fontFamily,normal);
+        text-align: center;
+    }
+
+    li{
+        img{
+            width: 255px;
+            height: 164px;
+        }
+        
+        .product-name{
+            h4{
+                @include font(24px,36px,$ch-fontFamily,normal);
+            }
+        }
+
+        .price{
+            h4{
+                @include font(24px,36px,$ch-fontFamily,normal);
+                color:$primary;
+            }
+        }
+
+        .color{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+
+        .color1{
+            background: #5F3E2D;
+        }
+
+        .color2{
+            background: #B75929;
+        }
+    }
+}
+

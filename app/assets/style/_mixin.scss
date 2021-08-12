@@ -15,3 +15,40 @@
     font-family: $font-family;
     font-weight: $font-weight;
 }
+
+.page{
+    li{
+        border:1px solid #555555;
+        @include font(18px,27px,$en-fontFamily,normal);
+        padding: 12px 16px;
+        a{
+            color:#555555;
+            text-decoration: none;
+        }
+        
+        &:hover{
+            background: #000;
+            a{
+                color:white;
+            }
+        }
+    }
+
+        li:first-child,li:last-child{
+            @include font(19px,29px,$en-fontFamily,normal);
+            padding: 11px 12px;
+            a{
+                color:#555555;
+                text-decoration: none;
+            }
+
+            &:hover{
+                background: #000;
+                a{
+                    color:white;
+                }
+            }
+
+        }
+    
+}
