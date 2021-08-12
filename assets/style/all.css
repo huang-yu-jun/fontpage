@@ -362,6 +362,9 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline; }
 
+.mr8 {
+  margin-right: 8px; }
+
 .mr10 {
   margin-right: 10px; }
 
@@ -401,6 +404,15 @@ img {
 .mb40 {
   margin-bottom: 40px; }
 
+.mb104 {
+  margin-bottom: 104px; }
+
+.mb107 {
+  margin-bottom: 107px; }
+
+.pt80 {
+  padding-top: 80px; }
+
 .pb16 {
   padding-bottom: 16px; }
 
@@ -412,6 +424,38 @@ img {
 
 .pr16 {
   padding-right: 16px; }
+
+.pb160 {
+  padding-bottom: 160px; }
+
+.page li {
+  border: 1px solid #555555;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  padding: 12px 16px; }
+  .page li a {
+    color: #555555;
+    text-decoration: none; }
+  .page li:hover {
+    background: #000; }
+    .page li:hover a {
+      color: white; }
+
+.page li:first-child, .page li:last-child {
+  font-size: 19px;
+  line-height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  padding: 11px 12px; }
+  .page li:first-child a, .page li:last-child a {
+    color: #555555;
+    text-decoration: none; }
+  .page li:first-child:hover, .page li:last-child:hover {
+    background: #000; }
+    .page li:first-child:hover a, .page li:last-child:hover a {
+      color: white; }
 
 .banner {
   background-image: url("../images/banner.png");
@@ -501,19 +545,19 @@ img {
     text-align: center; }
   .design ul {
     width: 100%; }
-  .design li {
-    width: 50%;
-    height: 455px; }
-    .design li .pic1 {
+    .design ul li {
+      width: 50%;
+      height: 455px; }
+      .design ul li h3 {
+        font-size: 72px;
+        line-height: 108px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #AA0601; }
+    .design ul .pic1 {
       background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png") center; }
-    .design li .pic2 {
+    .design ul .pic2 {
       background-image: url("../images/product-9.png"); }
-    .design li h3 {
-      font-size: 72px;
-      line-height: 108px;
-      font-family: "Roboto", sans-serif;
-      font-weight: bold;
-      color: #AA0601; }
 
 .customer {
   padding-top: 60px;
@@ -618,12 +662,17 @@ img {
       background: #FBF2F2;
       border: 1px solid black; }
     .contact .content input[type="submit"] {
+      display: block;
       background: #AA0601;
       width: 350px;
       height: 54px;
       color: white;
       border: none;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "Noto Sans TC", sans-serif;
+      font-weight: normal; }
 
 .faq {
   margin-bottom: 160px; }
@@ -968,5 +1017,104 @@ img {
   @media (max-width: 376px) {
     .location-detail iframe {
       height: 211px; } }
+
+.product_op .nav li {
+  border: 1px solid #DCDCDC; }
+
+.product_op .nav li:nth-child(1) {
+  border-bottom: 3px solid #AA0601; }
+  .product_op .nav li:nth-child(1) a {
+    padding: 23px 90px 23px 10px;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none; }
+  .product_op .nav li:nth-child(1) img {
+    margin-left: 92px;
+    height: 44px;
+    width: 44px; }
+
+.product_op .nav li:nth-child(2) a {
+  padding: 23px 57px 23px 10px;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #000;
+  text-decoration: none; }
+
+.product_op .nav li:nth-child(2) img {
+  margin-left: 57px;
+  height: 44px;
+  width: 44px; }
+
+.product_op .nav li:nth-child(3) a {
+  padding: 23px 71px 23px 10px;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #000;
+  text-decoration: none; }
+
+.product_op .nav li:nth-child(3) img {
+  margin-left: 50px;
+  height: 44px;
+  width: 44px; }
+
+.product-banner ul li {
+  height: 304px; }
+
+.product-banner ul li:first-child {
+  width: 50%;
+  background-image: url("../images/banner-1.png"); }
+
+.product-banner ul li:nth-child(2) {
+  width: 50%;
+  background-image: url("../images/banner-2.png"); }
+
+.product-intro h2 {
+  font-size: 42px;
+  line-height: 63px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-align: center; }
+
+.product-intro h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  text-align: center; }
+
+.product-intro li img {
+  width: 255px;
+  height: 164px; }
+
+.product-intro li .product-name h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal; }
+
+.product-intro li .price h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  color: #AA0601; }
+
+.product-intro li .color {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px; }
+
+.product-intro li .color1 {
+  background: #5F3E2D; }
+
+.product-intro li .color2 {
+  background: #B75929; }
 
 /*# sourceMappingURL=all.css.map */
