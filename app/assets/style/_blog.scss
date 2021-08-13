@@ -9,14 +9,15 @@
                 @include font(20px,24px,$ch-fontFamily,normal);
             }
         }
+        i{
+            font-size: 29px;
+            color:#fff;
+            vertical-align: middle;
+        }
     }
 
 
-    i{
-        font-size: 29px;
-        color:#fff;
-        vertical-align: middle;
-    }
+
 
     .main{
         h2{
@@ -56,6 +57,87 @@
                 @include font(36px,54px,$en-fontFamily,bold); 
                 color:$secondary;
             }
+        }
+    }
+
+    .article-content{
+
+        .article-main{
+            width: 72%;
+        }
+
+        .breadcrumbs{
+            @include font(16px,24px,$ch-fontFamily,normal);
+            span{
+                color:$primary;
+            }
+        }
+
+        .tag{
+            h5{
+                @include font(24px,36px,$en-fontFamily,normal);
+                color:$primary;
+            }
+        }
+
+        h2{
+            @include font(48px,95px,$ch-fontFamily,bold);
+        }
+
+        .sub-title{
+            h3{
+                @include font(28px,42px,$en-fontFamily,bold);
+            }
+
+            h5{
+                @include font(16px,24px,$en-fontFamily,normal);
+                color:#6C6C6C;
+            }
+        }
+
+        .detail{
+            img{
+                width: 100%;
+                height: 539px;
+            }
+
+            p{
+                @include font(20px,30px,$ch-fontFamily,normal);
+                color:#0A0A0A;
+            }
+        }
+
+        .share{
+            img{
+                width: 24px;
+                height: 24px;
+            }
+            p{
+                @include font(20px,30px,$en-fontFamily,bold);
+                color:#0A0A0A;
+            }
+        }
+
+        .page-link{
+            a{
+                color:#000;
+                text-decoration: none;
+                @include font(19px,30px,$en-fontFamily,normal);
+            }
+        }
+    }
+
+    .article-tag{
+        width: 22%;
+
+        h3{
+            @include font(28px,42px,$en-fontFamily,normal);
+            color:$primary;
+        }
+
+        h4{
+            @include font(24px,36px,$en-fontFamily,normal);
+            color:$primary;
         }
     }
 }
