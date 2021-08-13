@@ -7,6 +7,10 @@
                 text-decoration: none;
                 color:#fff;
                 @include font(20px,24px,$ch-fontFamily,normal);
+
+                @include pad(){
+                    @include font(16px,24px,$ch-fontFamily,normal);
+                }
             }
         }
         i{
@@ -21,7 +25,9 @@
 
     .main{
         h2{
-            @include bigTitle;
+            @include font(48px,80px,$ch-fontFamily,bold);
+            padding-left: 16px;
+            border-left : 8px solid $primary;
         }
     }
 
@@ -30,27 +36,61 @@
         img{
             width: 57%;
             height: 400px;
+            @include pad(){
+                width: 47%;
+                height: 208px;
+            }
         }
 
         h4{
             @include font(32px,63px,$ch-fontFamily,normal);
             color:$primary;
             text-decoration: none;
+            @include pad(){
+                font-size: 20px;
+            }
         }
 
         ul{
             width: 43%;
             height: 400px;
+            @include pad(){
+                width: 47%;
+                height: 208px;
+            }
 
             h5{
                 @include font(20px,30px,$en-fontFamily,normal); 
+                @include pad(){
+                    font-size: 16px;
+                }
             }
             h6{
                 @include font(16px,24px,$en-fontFamily,normal); 
+                @include pad(){
+                    font-size: 14px;
+                }
             }
 
             p{
                 @include font(20px,30px,$ch-fontFamily,normal); 
+                @include pad(){
+                    font-size: 14px;
+                    line-height: 21;
+                }
+            }
+
+            .more{
+                display: none;
+                @include pad(){
+                    display: inline-block;
+                }
+            }
+
+            .more-pc{
+                @include pad(){
+                    display: none;
+                }
             }
 
             h3{
