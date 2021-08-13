@@ -1194,10 +1194,10 @@ img {
 .product-intro li .color2 {
   background: #B75929; }
 
-.blog .banner {
+.blog .blog-banner {
   background: #650300;
   height: 52px; }
-  .blog .banner li a {
+  .blog .blog-banner li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
