@@ -365,6 +365,9 @@ img {
 .pt12 {
   padding-top: 12px; }
 
+.pt40 {
+  padding-top: 40px; }
+
 .pb12 {
   padding-bottom: 12px; }
 
@@ -466,6 +469,14 @@ img {
 
 .pb160 {
   padding-bottom: 160px; }
+
+@media (max-width: 767px) {
+  .mr-md-32 {
+    margin-right: 32px; } }
+
+@media (max-width: 767px) {
+  .mb-md-40 {
+    margin-bottom: 40px; } }
 
 .page li {
   border: 1px solid #555555;
@@ -1231,26 +1242,34 @@ img {
     line-height: 24px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: normal; }
+    @media (max-width: 767px) {
+      .blog .blog-banner li a {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: normal; } }
   .blog .blog-banner i {
     font-size: 29px;
     color: #fff;
     vertical-align: middle; }
 
 .blog .main h2 {
-  margin-top: 96px;
-  margin-bottom: 60px;
   font-size: 48px;
   line-height: 80px;
-  font-weight: 900;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
   padding-left: 16px;
-  border-left: 8px solid #AA0601;
-  font-family: 'Noto Sans'; }
+  border-left: 8px solid #AA0601; }
 
 .blog .article {
   cursor: pointer; }
   .blog .article img {
     width: 57%;
     height: 400px; }
+    @media (max-width: 767px) {
+      .blog .article img {
+        width: 47%;
+        height: 208px; } }
   .blog .article h4 {
     font-size: 32px;
     line-height: 63px;
@@ -1258,24 +1277,49 @@ img {
     font-weight: normal;
     color: #AA0601;
     text-decoration: none; }
+    @media (max-width: 767px) {
+      .blog .article h4 {
+        font-size: 20px; } }
   .blog .article ul {
     width: 43%;
     height: 400px; }
+    @media (max-width: 767px) {
+      .blog .article ul {
+        width: 47%;
+        height: 208px; } }
     .blog .article ul h5 {
       font-size: 20px;
       line-height: 30px;
       font-family: "Roboto", sans-serif;
       font-weight: normal; }
+      @media (max-width: 767px) {
+        .blog .article ul h5 {
+          font-size: 16px; } }
     .blog .article ul h6 {
       font-size: 16px;
       line-height: 24px;
       font-family: "Roboto", sans-serif;
       font-weight: normal; }
+      @media (max-width: 767px) {
+        .blog .article ul h6 {
+          font-size: 14px; } }
     .blog .article ul p {
       font-size: 20px;
       line-height: 30px;
       font-family: "Noto Sans TC", sans-serif;
       font-weight: normal; }
+      @media (max-width: 767px) {
+        .blog .article ul p {
+          font-size: 14px;
+          line-height: 21; } }
+    .blog .article ul .more {
+      display: none; }
+      @media (max-width: 767px) {
+        .blog .article ul .more {
+          display: inline-block; } }
+    @media (max-width: 767px) {
+      .blog .article ul .more-pc {
+        display: none; } }
     .blog .article ul h3 {
       font-size: 36px;
       line-height: 54px;
