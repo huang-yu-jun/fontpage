@@ -4,9 +4,11 @@
             border:1px solid $gray;
         }
 
-        li:nth-child(1){
+        .bb-primary{
+            border-bottom:3px solid $primary;
+        }
 
-            border-bottom: 3px solid $primary;
+        li:nth-child(1){
             a{
                 padding: 23px 90px 23px 10px; 
                 @include font(32px , 48px, $en-fontFamily,normal);
@@ -63,11 +65,13 @@
         li:first-child{
             width: 50%;
             background-image: url('../images/banner-1.png');
+            background-position: center center;
         }
 
         li:nth-child(2){
             width: 50%;
             background-image: url('../images/banner-2.png');
+            background-position: center center;
         }
     }
 
@@ -85,8 +89,13 @@
     }
 
     li{
-        img{
+        .w224{
             width: 255px;
+            height: 164px;
+        }
+
+        .w350{
+            width: 350px;
             height: 164px;
         }
         

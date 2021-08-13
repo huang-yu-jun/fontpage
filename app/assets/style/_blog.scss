@@ -1,0 +1,62 @@
+.blog{
+    .banner{
+        background: $secondary;
+        height: 52px;
+        li{
+            a{
+                text-decoration: none;
+                color:#fff;
+                @include font(20px,24px,$ch-fontFamily,normal);
+            }
+        }
+    }
+
+
+    i{
+        font-size: 29px;
+        color:#fff;
+        vertical-align: middle;
+    }
+
+    .main{
+        h2{
+            @include bigTitle;
+        }
+    }
+
+    .article{
+        cursor:pointer;
+        img{
+            width: 57%;
+            height: 400px;
+        }
+
+        h4{
+            @include font(32px,63px,$ch-fontFamily,normal);
+            color:$primary;
+            text-decoration: none;
+        }
+
+        ul{
+            width: 43%;
+            height: 400px;
+
+            h5{
+                @include font(20px,30px,$en-fontFamily,normal); 
+            }
+            h6{
+                @include font(16px,24px,$en-fontFamily,normal); 
+            }
+
+            p{
+                @include font(20px,30px,$ch-fontFamily,normal); 
+            }
+
+            h3{
+                @include font(36px,54px,$en-fontFamily,bold); 
+                color:$secondary;
+            }
+        }
+    }
+}
+
