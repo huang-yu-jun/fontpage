@@ -71,6 +71,7 @@
         .shop-pic{
             height: 224px;
             width: 100%;
+            object-fit: cover
         }
 
         h3{
@@ -142,6 +143,9 @@
                 text-align: center;
                 width: 100%;
                 padding:20px 0;
+                &:hover{
+                    background: #373A3C;
+                }
             }
     }
 
@@ -244,6 +248,7 @@
         .shop-pic{
             width: 100%;
             height: 224px;
+            object-fit: cover;
 
             @include pad(){
                 width: 50%;

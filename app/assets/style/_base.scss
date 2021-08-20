@@ -177,6 +177,10 @@
     margin-bottom: 107px;
 }
 
+.mb160{
+    margin-bottom: 160px;
+}
+
 .pt78{
     padding-top: 78px;
 }
@@ -191,6 +195,10 @@
 
 .pb80{
     padding-bottom: 80px;
+}
+
+.pb96{
+    padding-bottom: 96px;
 }
 
 .pl16{
@@ -214,5 +222,11 @@
 .mb-md-40{
     @include pad(){
         margin-bottom: 40px;
+    }
+}
+
+.mr-md-0{
+    @include pad-larger(){
+        margin-right: 0;
     }
 }
