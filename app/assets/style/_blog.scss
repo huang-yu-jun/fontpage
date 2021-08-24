@@ -73,11 +73,25 @@
             }
 
             p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
                 @include font(20px,30px,$ch-fontFamily,normal); 
+                @include pad-larger(){
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 6;
+                    // -webkit-box-orient: vertical;
+                }
                 @include pad(){
                     font-size: 14px;
                     line-height: 21;
+                    -webkit-line-clamp: 2;
                 }
+
             }
 
             .more{
@@ -96,6 +110,11 @@
             h3{
                 @include font(36px,54px,$en-fontFamily,bold); 
                 color:$secondary;
+
+                @include pad-larger(){
+                    @include font(14px,21px,$en-fontFamily,normal);
+                    color:#555;
+                }
             }
         }
     }
