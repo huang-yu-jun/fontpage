@@ -1158,7 +1158,8 @@ img {
   border-bottom: 3px solid #AA0601; }
 
 .product_op .nav li:nth-child(1) a {
-  padding: 23px 90px 23px 10px;
+  display: block;
+  padding: 32px 94px;
   font-size: 32px;
   line-height: 50px;
   font-family: "Roboto", sans-serif;
@@ -1172,6 +1173,8 @@ img {
       line-height: 32px;
       font-family: "Roboto", sans-serif;
       font-weight: normal; } }
+  .product_op .nav li:nth-child(1) a i {
+    color: #AA0601; }
 
 .product_op .nav li:nth-child(1) img {
   height: 44px;
@@ -1390,14 +1393,28 @@ img {
         .blog .article ul h6 {
           font-size: 14px; } }
     .blog .article ul p {
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       font-size: 20px;
       line-height: 30px;
       font-family: "Noto Sans TC", sans-serif;
       font-weight: normal; }
+      @media (max-width: 920px) {
+        .blog .article ul p {
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+             text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 6; } }
       @media (max-width: 767px) {
         .blog .article ul p {
           font-size: 14px;
-          line-height: 21; } }
+          line-height: 21;
+          -webkit-line-clamp: 2; } }
     .blog .article ul .more {
       display: none; }
       @media (max-width: 767px) {
@@ -1412,6 +1429,13 @@ img {
       font-family: "Roboto", sans-serif;
       font-weight: bold;
       color: #650300; }
+      @media (max-width: 920px) {
+        .blog .article ul h3 {
+          font-size: 14px;
+          line-height: 21px;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+          color: #555; } }
 
 .blog .article-content .article-main {
   width: 72%; }
